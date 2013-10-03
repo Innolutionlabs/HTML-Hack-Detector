@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>::HTML Hack Detector Demo::</title>
+    <link href="HTML%20Hack%20Detector%20Demo_files/style.css" rel="stylesheet" type="text/css">
+    <script src="HTML%20Hack%20Detector%20Demo_files/jquery-1.js" type="text/javascript"></script>
+    <script src="HTML%20Hack%20Detector%20Demo_files/detector_1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function changeHtml() {
+            Detector.TurnOff();
+            $('#lbl_html').append('<br/>Yes,I am changed now, ' + new Date().toLocaleTimeString());
+            Detector.TurnOn();
+
+        }
+        function ShowKnowMore() {
+            Detector.TurnOff();
+            $('#div_km').show();
+            $('#div_demo').hide();
+            Detector.TurnOn();
+        }
+        function showDemo() {
+            Detector.TurnOff();
+            $('#div_km').hide();
+            $('#div_demo').show();
+            Detector.TurnOn();
+        }
+        $(document).ready(function () {
+            $(document).Detector(function () {
+                alert("You are trying to hack my html .. logging out ;D");
+                window.location = "logout.htm";
+            });
+            Detector.TurnOn();
+        }); 
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h2>
+            HTML Hack Detector Demo</h2>
+        <a href="#" onclick="ShowKnowMore()">Click here to know more.</a>
+    </div>
+    <div class="container" align="center">
+        <div id="div_demo" style="display: block">
+            <h2>
+                Open developer tools and try to change html from there.This will fire a event.</h2>
+            <br>
+            <h2>
+                try following to safe change html.</h2>
+            <div class="innerdiv">
+                <a href="#" onclick="changeHtml()">Click Here to safe change html</a>
+                <label id="lbl_html">
+                    <br>
+                    I am HTML
+                </label>
+            </div>
+            <div class="innerdiv">
+                <div class="div_hover" align="center">
+                    :: Hover on me ::<br>
+                    :: Hover on me ::<br>
+                    :: Hover on me ::<br>
+                    :: Hover on me ::<br>
+                    :: Hover on me ::<br>
+                </div>
+            </div>
+            <div class="innerdiv">
+                <div class="img_hover">
+                </div>
+            </div>
+        </div>
+        <div id="div_km" style="padding: 20px; display: none" align="left">
+            <a href="#" onclick="showDemo();">&lt;&lt; Demo</a>
+            <ol>
+                <li>This option is curently available only on <strong>document</strong> variable in
+                    jQuery selector.</li>
+                <li>All you need to do is just put <b>$(document).Detector(function () { alert('my hack
+                    event handler')});</b> to initialize detector.</li>
+                <li>when you need to change HTML from javascript
+                    <br>
+                    ...<br>
+                    ......<br>
+                    Detector.TurnOff();<br>
+                    ....<br>
+                    ...<br>
+                    my javascript code that will change HTML safely ......<br>
+                    ....<br>
+                    Detector.TurnOn();<br>
+                    ...... </li>
+                <li>To get status of the detector <strong>Detector.IsEnabled();</strong> </li>
+                <li>I hope you like this.</li>
+                <li>Any bug and issue is most welcome.</li>
+<li>This is open source and free.</li>
+            </ol>
+        </div>
+    </div>
+
+
+<input value="1" val="0" id="dtct_23478x_xhs_5544_333333333333__ed" type="hidden"><input value="0" val="1" id="dtct_23478x_xhs_5544_333333333333__im" type="hidden"></body></html>

@@ -1,0 +1,66 @@
+﻿.header
+{
+    background-color: #9393FE;
+    border: 1px solid #808080;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 5px #808080;
+    height: 50px;
+    padding: 10px;
+}
+.header a
+{
+    color: #FFFFFF;
+    float: right;
+    font-size: large;
+    margin-top: -4%;
+    text-decoration: none;
+}
+.header a:hover
+{
+    font-weight: bold;
+}
+
+
+.header h2
+{
+    color: White;
+}
+.container
+{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px #808080;
+    height: 400px;
+    margin: 20px;
+}
+.innerdiv
+{
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+    box-shadow: 0 0 2px #808080;
+    float: left;
+    margin: 10px;
+    width: 25%;
+}
+.div_hover
+{
+    cursor: pointer;
+}
+.div_hover:hover
+{
+    background-color: green;
+    color: White;
+    font-weight: bold;
+    cursor: pointer;
+}
+.img_hover
+{
+    background: url("smile.jpg") no-repeat;
+    cursor: pointer;
+    height: 226px;
+}
+
+.img_hover:hover
+{
+    background: url("v.jpg") no-repeat;
+   
+}
